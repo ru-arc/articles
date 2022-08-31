@@ -1,0 +1,29 @@
+## SAGA - подборка ссылок из обсуждений [чата](https://t.me/ru_arc_chat) канала: 
+- Первоисточник по SAGA: "[SAGAS](https://www.cs.cornell.edu/andru/cs711/2002fa/reading/sagas.pdf)" by Hector Garcia-Molina, Kenneth Salem 
+- Перевод первоисточника по SAGA: "[Гектор Гарсия-Молина и Кеннет Салем — «Саги»](https://habr.com/ru/company/jugru/blog/680460/)" / Михаил Ланкин 
+- [Applying the Saga Pattern](https://youtu.be/xDuwrtwYHu8) • Caitie McCaffrey • GOTO 2015 
+- [Saga distributed transactions pattern](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/saga/saga) 
+-  [Process Manager Pattern](https://www.enterpriseintegrationpatterns.com/ProcessManager.html) 
+-  [Compensating Transaction pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/compensating-transaction) 
+-  [Пример реализации SAGA](https://vasters.com/archive/Sagas.html) на Enterprise Integration Patterns ([source code](https://gist.github.com/clemensv/3562597)) 
+-  [Пример реализации](https://github.com/microsoftarchive/cqrs-journey/blob/master/docs/Reference_06_Sagas.markdown#what-is-a-process-manager) Process Manager от сообщества Microsoft ([комментарий Greg Young](https://youtu.be/LDW0QWie21s?t=1092)). [Альтернативы и обоснование](https://github.com/microsoftarchive/cqrs-journey/blob/6ffd9a8c8e865a9f8209552c52fa793fbd496d1f/docs/Journey_03_OrdersBC.markdown). 
+-  [Patterns and implementations for a banking cloud transformation](https://docs.microsoft.com/en-us/azure/architecture/example-scenario/banking/patterns-and-implementations) 
+-  Несколько реализаций саг: \- [https://axoniq.io](https://axoniq.io) \- [https://eventuate.io/abouteventuatetram.html](https://eventuate.io/abouteventuatetram.html) \- [https://github.com/eclipse/microprofile-lra](https://github.com/eclipse/microprofile-lra) \- [https://github.com/jbosstm/narayana/tree/master/rts/lra](https://github.com/jbosstm/narayana/tree/master/rts/lra) 
+-  [Awesome workflow engines](https://github.com/meirwah/awesome-workflow-engines) 
+-  "[A long-running transaction model of workflow](https://ieeexplore.ieee.org/document/5639771)" by Quanzhou Hu; Jia Liu; Yi Zhuang; Yi Liu 
+-  "[The CORBA Activity Service Framework for supporting extended transactions](https://www.researchgate.net/publication/227624851_The_CORBA_Activity_Service_Framework_for_supporting_extended_transactions)" by Iain Houston, M. C. Little, Ian Robinson, Santosh K. Shrivastava, Stuart M. Wheater 
+-  "[What are long running processes?](https://blog.bernd-ruecker.com/what-are-long-running-processes-b3ee769f0a27)" by Bernd Rücker 
+-  Чем отличается SAGA от Process Manager: - [https://event-driven.io/en/saga\_process\_manager\_distributed\_transactions/](https://event-driven.io/en/saga_process_manager_distributed_transactions/) \- [https://stackoverflow.com/a/33652837](https://stackoverflow.com/a/33652837) \- [https://blog.devarchive.net/2015/11/saga-vs-process-manager.html?m=1](https://blog.devarchive.net/2015/11/saga-vs-process-manager.html?m=1) 
+-  "[Eventually consistent](https://dl.acm.org/doi/10.1145/1435417.1435432)" by Werner Vogels 
+-  "[ACID properties of transactions](https://www.ibm.com/docs/en/cics-ts/5.4?topic=processing-acid-properties-transactions)" 
+-  "[Atomicity :: Chapter 12. Berkeley DB Transactional Data Store Applications](https://docs.oracle.com/cd/E17076_05/html/programmer_reference/transapp_atomicity.html)" 
+-  "[Atomic](https://en.m.wiktionary.org/wiki/%E1%BC%84%CF%84%CE%BF%CE%BC%CE%BF%CF%82#Ancient_Greek) \- indivisible, not capable of being cut/divided into smaller pieces" 
+-  "[Consistency Models](https://jepsen.io/consistency)" 
+-  интервью "[Modeling Uncertainty with Reactive DDD](https://www.infoq.com/articles/modeling-uncertainty-reactive-ddd/)" by Vaughn Vernon reviewed by Thomas Betts, в котором V.Vernon предлагает использовать [Process Manager Pattern](https://www.enterpriseintegrationpatterns.com/patterns/messaging/ProcessManager.html) для обработки процессов, охватывающих несколько агрегатов в условиях Eventual Consistency. Посмотреть реализацию в исполнении V. Vernon, включая ProcessTimedOut (о чем часто спрашивают), можно здесь: - [Java](https://github.com/VaughnVernon/IDDD_Samples/tree/9b27b11773f62afb5d1b541abf51fb36516a7250/iddd_common/src/main/java/com/saasovation/common/domain/model/process) \- [.Net](https://github.com/VaughnVernon/IDDD_Samples_NET/tree/90fcc52d9c1af29640ec2a8a3e0e7c692f3e6663/iddd_common/Domain.Model) 
+-  "[Camunda Platform 8 Docs :: BPMN coverage](https://docs.camunda.io/docs/0.25/components/zeebe/bpmn-workflows/bpmn-coverage/)" 
+-  [Eclipse Microprofile стандарт имеет понятие LRA](https://download.eclipse.org/microprofile/microprofile-lra-1.0-M1/microprofile-lra-spec.html) \- Long Running Application. это есть их интерпретация саг 
+-  Microprofile-compatible фреймворки а-ля [micronaut.io](https://micronaut.io) 
+-  RedHat развивает референс имплементацию Microprofile в виде своего фреймворка [quarkus.io](https://quarkus.io) 
+-  Red Hut Summit "[Saga: The new era of transactions in a microservices architecture](https://www.redhat.com/files/summit/session-assets/2019/T42224.pdf)" by Giovanni Marigi, Mauro Vocale. BOSTON, MA | MAY 7-9, 2019 
+-  Вот пример Camunda. [их интерпретация и имплементация саг](https://camunda.com/blog/2018/08/bpmn-microservices-orchestration-part-2-graphical-models/) )). Там всё очень упрощено и декларативно. 
+-  Architecture standard определяет сагу в пункте [21.2.7. Ensuring Global Consistency with Saga Patterns](https://pubs.opengroup.org/architecture/o-aa-standard/software-architecture.html) 
